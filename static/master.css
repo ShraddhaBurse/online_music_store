@@ -1,0 +1,33 @@
+.navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+}
+.jumbotron {
+    margin-bottom: 0;
+}
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(46,194,190,1) 0%, rgba(255,173,173,1) 100%);
+}
+a{
+    text-decoration: none;
+}
+.panel-footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.panel-body{
+    height: 50vh;
+    max-height: 60vh;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,0,0,1) 100%);
+}
+.panel-heading{
+    color: white;
+    background-color: black;
+}

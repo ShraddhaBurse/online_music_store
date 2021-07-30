@@ -1,0 +1,51 @@
+{%extends "master.html"%}
+{% load static %}
+{%block content%}
+<link rel="stylesheet" href="{% static 'playsong.css' %}">
+<script></script>
+
+<div class="container container1">
+    <div class="col-md-2">
+    </div>
+	<div class="col-md-8">
+        <div class="ui">
+            <div class="ui-toolbar">
+                <i class="fas fa-chevron-down"></i>
+                
+                <div>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </div>
+            
+            <div class="ui-cover">
+                
+                <div class="ui-cover-title">
+                    <p>{{song.artist}}</p>
+                    <p>{{song.sname}}</p>
+                </div>
+            </div>
+            
+            <div class="ui-actions">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-plus"></i>
+            </div>
+            
+            <div class="ui-seekbar">
+                <input type="range" class="ui-slider" min="1" max="1200" value="0">
+            </div>
+            
+            <div class="ui-controls">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+</div>
+
+{%endblock%}

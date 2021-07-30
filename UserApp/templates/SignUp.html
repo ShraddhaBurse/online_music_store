@@ -1,0 +1,21 @@
+{%extends "master.html"%}
+
+{%block content%}
+<form method="POST">
+    {% csrf_token %}
+<table class="table">
+    <tr><td>Email Id</td>
+        <td><input type="text" name="email"/></td></tr>
+    <tr><td>Enter User Id</td>
+        <td><input type="text" name="uname"/> <span>{{invalid}}</span></td>
+        
+    </tr>
+        
+    <tr><td>Password</td>
+        <td><input type="text" name="pwd"/></td></tr>
+    <tr>
+        <td><button type="submit" class="button btn-success">SignUp</button></td>
+    </tr>
+</table>
+</form>
+{%endblock%}
